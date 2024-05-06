@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="employeesApp">
   <head>
-    <title>TheNetNinja Angular Playlist</title>
+    <title>AngularJS application</title>
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="app/lib/angular.min.js" ></script>
+    <script src="app/lib/angular-route.min.js"></script>
+    <script src="app/lib/angular-animate.min.js"></script>
+    <script src="content/scripts/employees.js"></script>
   </head>
   <body>
+    <!-- <input ng-model="favMeant" placeholder="Enter your favourite meat"/>
+    <p>Your favourite meat is : {{favMeant}}</p>
+    <header ng-include="'content/views/navbar.html'"></header> -->
 
+    <div id="menu-bar">
+      <h1>Emplyees App</h1>
+      <ul>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/employees">Employee List</a></li>
+      </ul>
+    </div>
+
+    <main ng-view></main>
   </body>
 </html>
