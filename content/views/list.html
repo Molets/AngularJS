@@ -1,0 +1,9 @@
+<div class="content">
+  <ul>
+    <li ng-repeat="employee in employees | orderBy : 'name'" ng-show="employee.available">
+      {{employee.name}} - {{employee.age}}
+      <span ng-click="deleteEmployee(employee)" style="margin : 0px 12px; color : red;">x</span>
+      <span >{{employee.salary | currency : 'R'}}</span>
+    </li>
+  </ul>
+</div>
