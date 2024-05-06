@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Palesa",
+        "age": 34,
+        "salary": 3000,
+        "available": true
+    },
+    {
+        "name": "Lerato",
+        "age": 27,
+        "salary": 2500,
+        "available": false
+    },
+    {
+        "name": "Liteboho",
+        "age": 41,
+        "salary": 5000,
+        "available": true
+    },
+    {
+        "name": "Lenka",
+        "age": 23,
+        "salary": 3800,
+        "available": true
+    }
+]
