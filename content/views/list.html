@@ -1,9 +1,22 @@
 <div class="content">
+  <div class="">
+    <button type="button" ng-click="orderAttribute='name'">Sort by Name</button>
+    <button type="button" ng-click="orderAttribute='salary'" style="float : right">Sort by Salary</button>
+  </div>
   <ul>
-    <li ng-repeat="employee in employees | orderBy : 'name'" ng-show="employee.available">
+    <li ng-repeat="employee in employees | orderBy : orderAttribute" ng-show="employee.available">
       {{employee.name}} - {{employee.age}}
       <span ng-click="deleteEmployee(employee)" style="margin : 0px 12px; color : red;">x</span>
       <span >{{employee.salary | currency : 'R'}}</span>
     </li>
   </ul>
+
+  <div class="">
+    <input type="text" name="name" ng-model="newEmployee.name" placeholder="name">
+    <input type="text" name="age" ng-model="newEmployee.age" placeholder="age">
+    <input type="text" name="salary" ng-model="newEmployee.salary" placeholder="salary">
+
+    <a href="#" ng-click="addEmployee()">Add New Employee</a>
+  </div>
+
 </div>
